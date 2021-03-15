@@ -37,7 +37,7 @@ function mobileShow (){
 
 new Freezeframe({
   trigger: 'hover',
-  overlay: true,
+  overlay: false,
   responsive: true,
   warnings: false
 });
