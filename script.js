@@ -1,20 +1,23 @@
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+// var tooltipTriggerList = Array.from(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
 
-var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+// var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+//   return new bootstrap.Tooltip(tooltipTriggerEl)
+// })
 
 
 
-window.onscroll = function() {myFunction()};
+window.onscroll = ()=> { (myFunction)()};
 
 function myFunction() {
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
     document.querySelector(".nav").classList.add("affix");
     document.getElementById("nav-link-main").style.fontSize="2em";
+    document.getElementById("nav-link-main").style.fontWeight="bold";
+
   } else {
     document.querySelector(".nav").classList.remove("affix");
     document.getElementById("nav-link-main").style.fontSize="1em";
+    document.getElementById("nav-link-main").style.fontWeight="normal";
   }
 }
 
@@ -31,3 +34,10 @@ function mobileShow (){
     }
   });  
 }
+
+new Freezeframe({
+  trigger: 'hover',
+  overlay: true,
+  responsive: true,
+  warnings: false
+});
