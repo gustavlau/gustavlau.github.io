@@ -270,9 +270,14 @@ a:hover {
 
 }
 
+.about-section{
+  background-color:#ffcc80;
+}
+
 .contact {
   background-color:#e4c1ab;
 }
+
 
 .live-code-btn{
   margin:0 10px;
@@ -322,7 +327,7 @@ a:hover {
 
 
 
-
+/* ABOUT FORM CSS*/
 #fs-frm {
   padding-bottom:2em;
 }
@@ -435,6 +440,8 @@ a:hover {
 #fs-frm fieldset.locale select[name="state"] {
   margin-right: 3%;
 }
+
+
 
 .freezeframe {
   cursor:pointer;
