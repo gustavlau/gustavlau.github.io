@@ -1,6 +1,4 @@
-/* *{
-    border:solid black 1px;
-} */
+
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700'); /*header font*/
 
 body{
@@ -58,12 +56,6 @@ body{
   text-align:center;
   transition: all 0.2s;
 }
-/* #project-main-btn:hover{
-  color:white;
-  background-color:#e85d04;
-  border:0.1em solid white;
-} */
-
 
 .bg-image{
   /* width:100%; */
@@ -284,10 +276,6 @@ a:hover {
   white-space: nowrap;
 }
 
-/* @media (min-width: 576px) {
-  .live-code-btn{
-    margin:0;
-} */
 
 @media (min-width: 768px) {
   .nav-links {
