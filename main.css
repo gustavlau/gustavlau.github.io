@@ -295,22 +295,24 @@ a:hover {
 }
 
 @media (min-width: 992px) {
-  /* .bg-image{
-    height:40vh;
-  } */
+  .bg-image{
+    height:15rem;
+  }
 }
 
 @media (min-width: 1200px) { 
-
+  /* .bg-image{
+    height:40vh;
+  } */
 }
 
 @media (min-width: 1400px) { 
   #hero{
     height: 55rem;
   }
-  /* .bg-image{
-    height:50vh;
-  } */
+  .bg-image{
+    height:19rem;
+  }
 }
 
 
