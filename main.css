@@ -10,7 +10,7 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 90%);
 }
 
 .anchor{
@@ -264,12 +264,49 @@ a:hover {
 
 .about-section{
   background-color:#ffcc80;
+  position: relative;
+  z-index: 1;
+  /* clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%); */
+
+}
+
+.about-section:before {
+  background: inherit;
+  top: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(1.5deg);
+  transform-origin: 100% ;
+  z-index: -1;
+}
+
+
+.about-section:after {
+  background: inherit;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 50%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  transform: skewY(-1.5deg);
+  transform-origin: 100%;
+  z-index: -1;
 }
 
 .contact {
   background-color:#e4c1ab;
+  /* clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%); */
 }
 
+/* .about-contact-bg {
+  background-color:#e4c1ab;
+} */
 
 .live-code-btn{
   margin:0 10px;
@@ -309,6 +346,7 @@ a:hover {
 @media (min-width: 1400px) { 
   #hero{
     height: 55rem;
+    /* clip-path: polygon(100% 0, 100% 93%, 50% 100%, 0 93%, 0 0);    */
   }
   .bg-image{
     height:19rem;
